@@ -21,10 +21,6 @@ if(isset($_POST["login"]))
     $statement->bindValue(':user_password', $user_password);
 	$statement->execute();
 	$count = $statement->rowCount();
-	if($count > 0)
-} catch (\Exception $e) {
-    echo $e;
-  }
 
 }
 
